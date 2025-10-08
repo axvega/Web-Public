@@ -1,0 +1,8 @@
+baseURL = 'https://tu-sitio.netlify.app/'
+languageCode = 'es-es'
+title = 'Mi Sitio Web con Hugo'
+theme = 'ananke'
+
+[params]
+  description = "Mi primera página web estática con Hugo"
+  author = "Tu Nombre"
