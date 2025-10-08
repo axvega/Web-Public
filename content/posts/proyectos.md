@@ -1,6 +1,6 @@
 ---
 title: "Mis Proyectos"
-date: 2025-10-15
+date: 2025-10-08
 draft: false
 ---
 
@@ -31,7 +31,7 @@ Sistema de integración continua para despliegue automático:
 - **Despliegue continuo** en GitHub Pages
 - **Verificación** de cambios
 
-![Proyecto de automatización](~/Web-Angel/static/automation.jpg)
+![Proyecto de automatización](/automation.jpg)
 
 **Enlaces relacionados:**
 - [Documentación de Hugo](https://gohugo.io/)

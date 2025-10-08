@@ -24,6 +24,6 @@ Este sitio demuestra las capacidades de Hugo como generador de sitios estáticos
 * Hosting: GitHub Pages
 * Control de versiones: Git
 
-![Tecnologías web](/images/web.jpg)
+![Tecnologías web](/web.jpg)
 
 [Ver mis proyectos](/posts/proyectos/) | [Leer tutoriales](/posts/tutoriales/) | [Contacto](/contact/)
