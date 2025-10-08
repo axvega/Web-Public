@@ -6,7 +6,7 @@ draft: false
 
 # Bienvenido a Mi Sitio Web
 
-Este es mi sitio web personal generado con Hugo como parte de la práctica de despliegue.
+Este es mi sitio web personal generado con Hugo para la práctica de despliegue.
 
 ## Sobre este proyecto
 
