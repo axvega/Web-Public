@@ -63,16 +63,36 @@ if [ ! -d ".git" ]; then
     git remote add origin "$remote_url"
 fi
 
+# Detectar la rama actual
+current_branch=$(git branch --show-current)
+if [ -z "$current_branch" ]; then
+    info "No hay rama activa. Creando rama main..."
+    git checkout -b main
+    current_branch="main"
+fi
+
 # Añadir todos los cambios
 git add -A
 
+# Verificar si hay cambios
+if git diff --staged --quiet; then
+    info "No hay cambios para desplegar"
+    cd ..
+    success "======================================"
+    success "  ¡PROCESO COMPLETADO!"
+    success "======================================"
+    exit 0
+fi
+
 # Commit con timestamp
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-git commit -m "Despliegue automático - $timestamp" || info "No hay cambios para desplegar"
+git commit -m "Despliegue automático - $timestamp"
+success "Commit realizado"
 
 # Push al repositorio remoto
-info "Subiendo cambios al repositorio de producción..."
-git push origin main -f || error "Error al hacer push. Verifica la configuración del repositorio remoto."
+info "Subiendo cambios al repositorio de producción (rama: $current_branch)..."
+git push origin "$current_branch" -f
+success "Push completado"
 
 cd ..
 
