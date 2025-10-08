@@ -1,4 +1,4 @@
-baseURL = 'https://tu-sitio.netlify.app/'
+baseURL = 'https://web-angel.netlify.app/'
 languageCode = 'es-es'
 title = 'Mi Sitio Web con Hugo'
 theme = 'ananke'
