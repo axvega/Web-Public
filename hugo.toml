@@ -1,0 +1,8 @@
+baseURL = 'https://web-angel.netlify.app/'
+languageCode = 'es-es'
+title = 'Mi Sitio Web con Hugo'
+theme = 'ananke'
+
+[params]
+  description = "Mi primera página web estática con Hugo"
+  author = "Angel de la Vega"
