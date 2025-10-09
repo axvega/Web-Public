@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/axvega/Web-Angel",
+	"sourceRoot": "/home/axvega/git/Web-Angel",
 	"sources": [
 		"ananke/css/main.css"
 	],
